@@ -11,8 +11,8 @@ const store = useUserStore();
 const { error } = storeToRefs(store)
 const { loginUser } = store;
 
-const email = ref('kindlynova@gmail.com')
-const password = ref('12345678')
+const email = ref('')
+const password = ref('')
 
 const isActive = computed(() => {
     if (email.value.length > 4 && password.value.length >= 4) return false;
